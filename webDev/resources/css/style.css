@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+
+:root {
+
+  --largeur-colonne: 250px;
+  --gouttiere: 30px;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #f0efef;
+  font-family: 'Open Sans', sans-serif;
+  color: #7A7C80;
+  }
+  
+    
+ h1{
+  padding: 20px;
+ } 
+  
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  max-width: 1400px;
+  }
+  
+  
+  input{
+  padding: 6px;
+  display:block;
+ }
+
+
+ 
+
+  
+  nav {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style: none;
+  background: #93bfce;
+  }
+  
+article h3{
+  color: #50b7d9;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+article span{
+  font-size: 14px;
+}
+
+article p{
+  letter-spacing: 0.5px;
+  line-height: 22px;
+}
+
+
+article>div:first-child{
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+  line-height: 25px;
+  border-bottom: #abadb0 1px solid;
+  
+  
+  
+
+}
+
+article{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+   
+    
+  }
+   
+  .navigation a:hover,
+  .userNav>a:hover {
+    background: #50b7d9;
+    
+  }
+
+
+
+.userNav{
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+
+}
+
+.userNav>a{
+
+  display: block;
+  padding: 9px 15px;
+  letter-spacing: 1px;
+  background-color: #7A7C80;
+  cursor: pointer;
+  border-radius: 2px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+ }
+
+
+
+ .grid-template {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(var(--largeur-colonne, 200px), 1fr));
+	gap: var(--gouttiere, 30px);
+  padding: 20px;
+}
+
+
+
+
+
+/* pages: Login - View - Create - newArticle ..........................*/
+
+.edit-area{
+
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.edit-area form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 0 15px;
+  
+
+
+}
+.edit-area input[type='text'],
+          input[type='date'],
+          input[type='submit'],
+          input[type='password'],
+          input[type='email']{
+
+  width: 100%;
+  padding: 7px;
+  font-size: 16px;
+  color: #7A7C80;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+
+
+.edit-area h2{
+  text-align: center;
+
+}
+
+
+.edit-area input[type='date']{
+      
+      width: 150px;
+}
+
+
+.edit-area span{
+
+  font-size: 22px;
+}
+
+
+.edit-area label{
+
+  font-size: 18px;
+
+}
+
+
+
+.edit-area textarea{
+
+  border-style: none;
+  overflow: auto;
+  
+  
+  height: 25ch;
+  font-size: 16px;
+  padding: 15px;
+  color: #7A7C80;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  border:solid 1px #ccc;
+  resize: horizontal;
+  
+
+}
+
+ .edit-area input[type='submit']{
+  appearance: none;
+  border: none;
+  background-color: #7A7C80;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 2px;
+ }
+  .edit-area input[type='submit']:hover{
+
+    background-color: #50b7d9;
+ }
+
+.edit-area input {
+  box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
+  border: 0;
+  border:solid 1px #ccc;
+}
+
+
+.edit-area input:focus,
+  textarea:focus { 
+  outline: none !important;
+  border-color: #7A7C80;
+  box-shadow: 0 0 5px #aaabad;
+ 
+}
+
+
+
+.errMsg{
+  display: block;
+  color: rgb(201, 63, 35);
+  border: #7A7C80 1px solid; 
+  padding: 9px; 
+  text-align: center;
+  font-size: 16px;
+  border-radius: 2px;
+  
+}
+
+
+
+/* Media.........................*/
+
+@media screen and (max-width: 520px) {
+  .navigation>a {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  
+
+
+}
